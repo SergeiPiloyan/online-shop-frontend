@@ -21,15 +21,15 @@ export default class DeviceStore {
         makeAutoObservable(this)
     }
 
-    setTypes(types) {
+    SetTypes(types) {
         this._types = types
     }
 
-    setBrands(brands) {
+    SetBrands(brands) {
         this._brands = brands
     }
 
-    senDevices(devices) {
+    SetDevices(devices) {
         this._devices = devices
     }
 
