@@ -14,11 +14,11 @@ const NavBar = observer(() => {
     return (
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-                <NavLink style={{ color: 'aliceblue' }} to={SHOP_ROUTE}> Online Store </NavLink>
+                <NavLink style={{ color: 'aliceblue', textDecoration: 'none' }} to={SHOP_ROUTE}> Online Store </NavLink>
                 {user.isAuth
                     ? <Nav className="ml-auto"  >
                         <Button variant={'outline-light'} > Admin panel </Button>
-                        <Button variant={'outline-light'} style={{ marginLeft: 10 }} > Login up </Button>
+                        <Button variant={'outline-light'} style={{ marginLeft: 10 }} > Log in </Button>
                     </Nav>
                     : <Nav className="ml-auto" >
                         <Button variant={'outline-light'} onClick={() => user.SetIsAuth(true)}> Sign up </Button>
