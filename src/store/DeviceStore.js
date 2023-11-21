@@ -10,7 +10,10 @@ export default class DeviceStore {
         ]
         this._brands = [
             { id: 1, name: 'Samsung' },
-            { id: 2, name: 'Apple' }
+            { id: 2, name: 'Apple' },
+            { id: 3, name: 'Lenovo' },
+            { id: 4, name: 'Asus' },
+            { id: 5, name: 'OnePlus' }
         ]
         this._devices = [
             { id: 1, name: 'Iphone 11', price: 11000, rating: 1, img: '6c681eb7-2f5b-4724-9e32-75b5beecd37d.jpg' },
@@ -20,6 +23,7 @@ export default class DeviceStore {
             { id: 5, name: 'Iphone 15', price: 15000, rating: 5, img: '6c681eb7-2f5b-4724-9e32-75b5beecd37d.jpg' }
         ]
         this._selectedType = {}
+        this._selectedBrand = {}
         makeAutoObservable(this)
     }
 
@@ -39,6 +43,10 @@ export default class DeviceStore {
         this._selectedType = type
     }
 
+    setSelectedBrand(brand) {
+        this._selectedBrand = brand
+    }
+
     get types() {
         return this._types
     }
@@ -53,5 +61,9 @@ export default class DeviceStore {
 
     get selectedType() {
         return this._selectedType
+    }
+
+    get selectedBrand() {
+        return this._selectedBrand
     }
 }
