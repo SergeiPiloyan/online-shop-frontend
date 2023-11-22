@@ -16,11 +16,20 @@ export default class DeviceStore {
             { id: 5, name: 'OnePlus' }
         ]
         this._devices = [
-            { id: 1, name: 'Iphone 11', price: 11000, rating: 1, img: '6c681eb7-2f5b-4724-9e32-75b5beecd37d.jpg' },
-            { id: 2, name: 'Iphone 12', price: 12000, rating: 2, img: '6c681eb7-2f5b-4724-9e32-75b5beecd37d.jpg' },
-            { id: 3, name: 'Iphone 13', price: 13000, rating: 3, img: '6c681eb7-2f5b-4724-9e32-75b5beecd37d.jpg' },
-            { id: 4, name: 'Iphone 14', price: 14000, rating: 4, img: '6c681eb7-2f5b-4724-9e32-75b5beecd37d.jpg' },
-            { id: 5, name: 'Iphone 15', price: 15000, rating: 5, img: '6c681eb7-2f5b-4724-9e32-75b5beecd37d.jpg' }
+            { id: 1, name: 'Iphone 11', price: 11000, rating: 1, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 2, name: 'Iphone 12', price: 12000, rating: 2, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 3, name: 'Iphone 13', price: 13000, rating: 3, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 4, name: 'Iphone 14', price: 14000, rating: 4, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 5, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 6, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 7, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 8, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 9, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 10, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 11, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 12, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+            { id: 13, name: 'Iphone 15', price: 15000, rating: 5, img: 'https://images-platform.99static.com//rtkYYwN-Jhzva_5nxTO8cvbEUmg=/168x168:1512x1512/fit-in/500x500/99designs-contests-attachments/145/145591/attachment_145591755' },
+
         ]
         this._selectedType = {}
         this._selectedBrand = {}
