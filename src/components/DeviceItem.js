@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col, Image } from "react-bootstrap";
-import { useHistory, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { DEVICE_ROUTE } from "../utils/consts";
 
 const DeviceItem = ({ device }) => {
