@@ -10,7 +10,6 @@ const DevicePage = () => {
         { id: 3, title: 'Процессор', description: 'Пентиум 3' },
         { id: 4, title: 'Кол-во ядер', description: '2' },
         { id: 5, title: 'Аккумулятор', description: '4000' },
-
     ];
 
 
