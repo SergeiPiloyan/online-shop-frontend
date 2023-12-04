@@ -10,7 +10,6 @@ const BrandBar = observer(() => {
         <Col className="d-flex flex-wrap">
             {device.brands.map((brand) =>
                 <Card
-                    // className="p-3"
                     className="mx-2 my-2 p-2"
                     key={brand.id}
                     style={{ cursor: 'pointer' }}

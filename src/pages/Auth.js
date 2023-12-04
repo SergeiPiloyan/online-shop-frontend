@@ -1,29 +1,31 @@
 import React, { useContext, useState } from "react";
-import { Button, Col, Container, Form } from 'react-bootstrap'
-import { NavLink, useLocation } from "react-router-dom";
-import Card from 'react-bootstrap/Card'
+import { Button, Col, Container, Form, Card } from 'react-bootstrap'
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
 import { login, registration } from "../http/userAPI";
 import { observer } from 'mobx-react-lite'
 import { Context } from '../index'
 
 const Auth = observer(() => {
-    const { user } = useContext(Context)
     const location = useLocation()
+    const isLogin = location.pathname === LOGIN_ROUTE;
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
-    const isLogin = location.pathname === LOGIN_ROUTE;
+    const { user } = useContext(Context)
 
     const click = async () => {
-        let data;
-        if (isLogin) {
-            data = await login(email, password)
-        } else {
-            data = await registration(email, password)
+        try {
+            let data;
+            if (isLogin) {
+                data = await login(email, password)
+            } else {
+                data = await registration(email, password)
+            }
+            user.setIsUser(user)
+            user.setIsAuth(true)
+        } catch (error) {
+            alert(error.response.data.message)
         }
-        user.setUser(user)
-        user.setAuth(true)
     }
 
     return (
